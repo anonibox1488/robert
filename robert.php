@@ -24,7 +24,7 @@ class Robert
     private function mover(){
         switch ($this->direccion) {
             case 'N':
-            if ($this->x == 10) {
+            if ($this->x == 9) {
                 $this->x = 0;
             }else{
                 $this->x++;
@@ -32,13 +32,13 @@ class Robert
             break;
             case 'S':
             if ($this->x == 0) {
-                $this->x = 10;
+                $this->x = 9;
             }else{
                 $this->x--;
             }
             break;
             case 'E':
-            if ($this->y == 10) {
+            if ($this->y == 9) {
                 $this->y = 0;
             }else{
                 $this->y++;
@@ -46,7 +46,7 @@ class Robert
             break;
             case 'W':
             if ($this->y == 0) {
-                $this->y = 10;
+                $this->y = 9;
             }else{
                 $this->y--;
             }
@@ -96,6 +96,6 @@ class Robert
 
 $robert = new Robert;
 
-echo $robert->moveRobert('MMM');
+echo $robert->moveRobert('MMMMMMMMMM');
 
 ?>
